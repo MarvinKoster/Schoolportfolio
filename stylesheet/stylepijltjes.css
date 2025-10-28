@@ -1,0 +1,13 @@
+tr{
+    border: 2px solid black;
+}
+
+td{
+    border: 2px solid black;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom right, #1E293B, #334155);
+}
