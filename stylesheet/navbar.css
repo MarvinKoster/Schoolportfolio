@@ -1,0 +1,127 @@
+header {
+    display: flex;
+    align-items: center; /* zorgt dat tekst verticaal gecentreerd is */
+    flex-wrap: wrap; /* laat elementen naar een nieuwe regel springen als er geen ruimte is */
+    justify-content: space-between;
+    background-color: #f7f2f1;
+    backdrop-filter: blur(10px);
+    color: #000000;
+    height: auto;
+    position: sticky;
+    top: 0;
+    border: #334155 1px solid;
+    box-shadow: #010101 0px 0px 5px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    min-height: 3.4rem;
+    z-index: 1000;
+
+
+}
+
+/* Logo of terwijl waar nu staat mijn portfolio*/
+header h1 {
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap; /* laat menuitems naar volgende regel gaan */
+    /*border: #000000 1px solid;*/
+    margin: auto;
+
+}
+
+
+nav a {
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    margin: 1.1rem;
+    font-size: 18px;
+    position: relative;
+    top: auto;
+    /*box-shadow: #00c3ff 0px 0px 1px 2px;*/
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.fa {
+    margin-right: 5px;
+    margin-left: 5px;
+    font-size: 19px;
+
+}
+
+
+
+nav a:hover {
+    color: #7BDFF2;
+    transition: color 0.5s;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    nav a {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 3px;
+    }
+
+    header h1{
+        display: none;
+    }
+}
+
+.progress-container {
+    width: 100%;
+    height: 0px;
+    background: rgba(128, 128, 128, 0);
+}
+
+.progress-bar {
+    height: 5px;
+    background: #7bc5ff;
+    width: 0%;
+    border-radius: 15px;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #f7f2f1;
+    width: 100%;
+    z-index: 1;
+    border: rgb(128, 128, 128) 1px solid;
+    box-shadow: #7BDFF2 0px 4px 5px;
+    border-top: none;
+}
+
+
+.dropdown-content .fa {
+    font-size: 15px;
+
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownbtn{
+    display: inline-block;
+}
+
+
+

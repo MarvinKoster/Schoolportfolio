@@ -1,80 +1,124 @@
 
 body {
-    background: linear-gradient(to bottom right, #1E293B, #334155);
+    background: #f7f2f1;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-    color: white;
+    color: black;
     font-family: Arial, Helvetica, Verdana;
 
 }
 
-header {
-    display: flex;
-    align-items: center; /* zorgt dat tekst verticaal gecentreerd is */
-    justify-content: space-between; /* titel links, nav rechts */
-    flex-wrap: wrap; /* laat elementen naar een nieuwe regel springen als er geen ruimte is */
-    background-color: #202c3cac;
-    backdrop-filter: blur(10px);
+body.dark{
+    background: #030303;
     color: white;
-    text-align: left;
-    height: auto;
-    position: sticky;
-    top: 0;
-    border: #334155 1px solid;
-    box-shadow: #010101 0px 0px 5px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    z-index: 1000;
-    padding: 10px 20px;
-}
-
-/* Logo of terwijl waar nu staat mijn portfolio*/
-header h1 {
-    margin: 0; /* margin reset */
-    font-size: 24px;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    flex-wrap: wrap; /* laat menuitems naar volgende regel gaan */
 }
 
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 30px;
-    font-size: 18px;
-    position: relative;
-    top: auto;
-    
+/* Dark mode theme dit is voor alle darkmode dingen */
+body.dark{
+    body.dark{
+        background: #0c0a09;
+        color: white;
+    }
+
+
+    .gamen, .lopen, .muziek{
+        background-color: #27272a;
+        box-shadow: #00c3ff 1px 2px 10px;
+    }
+
+    .watikleukvind, .mijnverhaal{
+        background-color: #030303;
+        box-shadow: #00c3ff 1px 2px 10px;
+    }
+
+    .watikleukvind:hover, .mijnverhaal:hover{
+        box-shadow: #00c3ff 1px 5px 10px;
+    }
+
+    .darker {
+        background-color: #050505;
+    }
+
+    #eten, footer, .email, .teams, .locatie, .volgme {
+        background-color: #030303;
+    }
+
+
+    .volgme button{
+        color: #000000;
+    }
+
+    .volgme button:hover{
+        background: linear-gradient( to bottom left, rgb(250, 250, 250), #7bc5ff);
+    }
+
+   .hoek, .normaal{
+        background-color: rgb(0, 0, 0);
+       box-shadow: #00c3ff 1px 2px 10px;
+    }
+
+    button{
+        background-color: #ffffff;
+        box-shadow: #00c3ff 1px 0px 20px;
+    }
+
+    button, fa{
+        color: #000000;
+    }
+
+    header{
+        background-color: #030303;
+        border: #00c3ff 1px solid;
+        box-shadow: #00c3ff 0px 0px 5px;
+        border-right: none;
+        border-top: none;
+        border-left: none;
+    }
+
+    nav a{
+        background-color: #030303;
+    }
+
+    .dropdown-content{
+        background-color: #030303;
+    }
 }
 
-nav a:hover {
-    color: #7BDFF2;
-    transition: color 0.5s;
-}
 
-
-button {
-    background-color: #7bdef2e8;
-    color: #1E293B;
+button{
     border: none;
-    padding: 5px 15px;
-    border-radius: 7px;
-    font-size: 15px;
-    box-shadow: black 2px 10px 7px;
-    font-family: monospace;
+    box-shadow: #ffffff 1px 0px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #030303;
+    padding: 10px;
+    margin-right: 30px;
+    width: 5%;
 }
 
-button:hover{
-   box-shadow: #7BDFF2  2px 8px 6px;
-   color: white;
-}
+
+/*button{*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    margin: 30px;*/
+/*    font-size: 18px;*/
+/*    position: relative;*/
+/*    top: auto;*/
+/*    margin: 0px;*/
+/*    border: none;*/
+/*    padding: 0px;*/
+/*    background-color: transparent;*/
+/*    cursor: pointer;*/
+/*    display: inline-block;*/
+/*}*/
+
+/*button:hover {*/
+/*    color: #7BDFF2;*/
+/*    transition: color 0.5s;*/
+/*}*/
 
 /* Dit helpt mij met de design */
 /* section {
@@ -84,15 +128,17 @@ button:hover{
         border: gray 1px solid;
 } */
 
+
+
 section h2 {
     font-size: 28px;
 }
 
 #home {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 10rem;
     height: 35rem;
 }
@@ -105,52 +151,48 @@ section h2 {
 #home p {
     font-size: 24px;
     margin-bottom: 40px;
-    color: rgb(210, 210, 210);
+    color: rgb(0, 0, 0);
 }
 
-#about {
-    background-color: #202c3cac;
+.darker {
+    background-color: #e3e3e3;
     padding-bottom: 2rem;
     display: flex;                  /* activeer flexbox */
     flex-direction: column;         /* onder elkaar zetten */
     align-items: center;
     padding-bottom: 11rem;
-
-
 }
 
 
-#about h2 {
+
+.darker h2 {
     font-size: 36px;
     margin-bottom: 20px;
     text-align: center;
     padding-top: 70px;
 }
 
-#about p {
+.darker p {
     font-size: 20px;
     margin-bottom: 6%;
     text-align: center;
 }
-
 .profile-pic {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    justify-content: center;
+    align-items: center;
     object-fit: cover;
     border: 2px solid #7BDFF2;
-    margin-bottom: 30px;
 }
 
 .profile-pic:hover {
-    transform: scale(1.15);
     transition: height 2.5s;
     transition: width 2.5s;
     box-shadow: #7BDFF2 0px 0px 15px;
-    height: 195px;
+    height: 295px;
     width: 320px;
     border-radius: 0;
 }
@@ -170,7 +212,7 @@ section h2 {
 
 
 .mijnverhaal, .watikleukvind {
-   background-color: #202c3cac;
+   background-color: #f7f2f1;
    border: #334155 1px solid;
    border-radius: 15px;
    text-align: center;
@@ -184,8 +226,9 @@ section h2 {
     margin: 10px;
     max-width: 40rem;
     max-height: 10rem;
-
 }
+
+
 
 .mijnverhaal:hover{
     box-shadow: #7BDFF2 21px 20px 10px;
@@ -194,14 +237,6 @@ section h2 {
 .watikleukvind:hover{
     box-shadow: #7BDFF2 21px 20px 10px;
 }
-
-
-#about button {
-    display: block;
-    margin-left: 29%;
-
-}
-
 /* .big-pic:hover {
     transform: scale(1.15);
     transition: transform 1.5s;
@@ -209,14 +244,39 @@ section h2 {
 } */
 
 #familie{
-    /* border: #010101 2px solid; */
-    padding-bottom: 12%;
-    padding-top: 3rem;
+    /*border: #010101 2px solid;*/
+    padding-bottom: 16%;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.normaal {
+    position: relative;
+}
 
+.normaal .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #f7f2f1;
+    color: #fff;
+    text-align: center;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 5%;
+    left: 42%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 3.5s;
+    border: #7BDFF2 1px solid;
+}
+
+.normaal:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    color: black;
 }
 
 #familie h2, p{
@@ -230,87 +290,42 @@ section h2 {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around; /* wat hier gebeurt is dat het dat er evenveel ruimte tussen alles zit dit merk je vooral in een kleine window */
-
-
 }
 
-.ouders:hover, .broer:hover, .zus:hover, .huisdieren:hover{
+.hoek:hover, .normaal:hover{
     border: #7BDFF2 1px solid;
 }
-.ouders:hover{
-    border: #7BDFF2 1px solid;
-    box-shadow: -20px -10px 7px#7BDFF2 ;
-}
-.huisdieren:hover{
-    border: #7BDFF2 1px solid;
-    box-shadow: #7BDFF2 20px 10px 7px;
-}
 
-.huisdieren img:hover{
-    transform: scale(7.0);
-    transition-delay: 5s;
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
-.ouders, .broer, .zus, .huisdieren{
-        background-color: #202c3cac;
+.hoek, .normaal{
+        background-color: #e3e3e3;
         border-radius: 5%;
-
         border: #334155 1px solid;
         text-align: center;
         box-shadow: #090d11ac 20px 10px 7px;
         height: 20rem;
         width: 12rem;
+        font-size: 14px;
 }
 
-.ouders img, .broer img, .zus img, .huisdieren img{
+.hoek img, .normaal img{
     height: 40%;
     border-radius: 10%;
     width: 75%;
     padding: 5%;
 }
 
-.ouders h4{
-    font-size: 15px;
-}
-
-.ouders p{
-    color: rgba(255, 255, 255, 0.718);
-}
-
-
-
-
-
-
-#hobbys {
-    background-color: #202c3cac;
-    /* border: #010101 2px solid; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-#hobbys h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    text-align: center;
-    padding-top: 70px;
-}
-
-#hobbys p {
-    font-size: 20px;
-    margin-bottom: 6%;
-    text-align: center;
-}
-
 .hob-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    backdrop-filter: blur(10px);
     /* border: #010101 2px solid; */
     gap: 20px;
     margin: 40px;
@@ -320,9 +335,9 @@ section h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: #334155 1px solid;
+    border: #000000 1px solid;
     border-radius: 3%;
-    background-color: #202c3cac;
+    background-color: #f8f8f8;
     box-shadow: #090d11ac 1px 10px 10px;
     width: 300px;
     height: 400px;
@@ -355,7 +370,7 @@ section h2 {
     text-align: center;
     /* border:#010101 1px solid; */
     display: block;
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 
 #opleiding p{
@@ -402,67 +417,6 @@ div time{
     color: grey;
 }
 
-#eten{
-    background-color: #1E293B;
-    text-align: center;
-    margin-top: 2rem;
-    padding-top: 3rem;
-    padding-bottom: 15%;
-}
-
-.food-cards{
-    height: 40rem;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    justify-content: center; /* dit is voor de horizontale ding */
-    align-content: center; /* dit is voor de verticale ding */   /*let goed op dat je content gebruikt*/
-    gap: 1rem;
-    font-size: 13px;
-}
-
-
-.comfortfood, .chicken, .Kapsalon, .daggekijks{
-    border-radius: 17px;
-}
-
-.comfortfood, .chicken{
-    height: 150px;
-    width: 200px; 
-}
-
-.Kapsalon, .daggekijks{
-    height: 150px;
-    width: 450px; 
-}
-
-
-.Kapsalon{
-    background: linear-gradient(to bottom right, #49332D, #4B2C3D);
-    border: #814023 2px solid;
-    
-
-}
-
-.Kapsalon img, .comfortfood img, .daggekijks img, .chicken img{
-    margin-top: 1%;
-    width: 25px;
-}
-
-.comfortfood{
-    background: linear-gradient(to bottom right, #16463F, #184647);
-    border: #106D47 2px solid;
-}
-
-.daggekijks{
-    background: linear-gradient(to right, #223E65, #1B4D64);
-    border: #1F5994 2px solid;
-}
-
-.chicken{
-    background: linear-gradient(to bottom right, #3A2E60, #4A2F53);
-    border: #66368A 2px solid;
-}
-
 
 
 #projecten{
@@ -470,7 +424,7 @@ div time{
     margin-top: 5%;
     /* border:#010101 1px solid; */
     display: block;
-    padding-top: 3rem;
+    padding-top: 5rem;
     margin-bottom: 12rem;
 }
 
@@ -497,7 +451,7 @@ div time{
 
 
 .cards, .soon{
-    border: #334155 2px solid;
+    border: #334155 1px solid;
     height: 8rem;
     width: 49%;
     margin-bottom: 2%;
@@ -523,26 +477,90 @@ div time{
     border: #116cf5 1px solid;
 }
 
+#beoordeling {
+    display: flex;
+    flex-direction: column;
+    background: #e3e3e3;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
 
+.post {
+    background-color: #f7f2f1;
+    border: #334155 1px solid;
+    border-radius: 15px;
+    padding: 20px;
+    width: 25rem;
+    box-shadow: #090d11ac 20px 10px 7px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
 
+/* Titel donkerder en opvallender */
+.post-title {
+    font-size: 26px;
+    margin: 0;
+    color: #1e293b;
+    font-weight: 900;
+    text-shadow: 1px 1px 4px #cbd5e1;
+    background: rgba(30, 41, 59, 0.24);
+    border-radius: 12px;
+
+}
+
+/* Beschrijving */
+.post-description {
+    font-size: 16px;
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.post-rating {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 15px;
+    background-color: #ffffff;
+    border: 2px solid #1e293b;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 12px #1e293b4d;
+}
+
+/* Hover effect */
+.post:hover {
+    box-shadow: #7BDFF2 20px 10px 10px;
+    transition: 0.3s;
+}
 
 
 footer {
     /* border: #000000 8px solid; */
-    background-color: #131D30; 
+    background-color: #f7f2f1;
     height: auto;
     gap: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 2rem;
+    padding-top: 3rem;
 }
 
 
 footer div{
     height: 220px;
     width: 41.875rem;
-    background-color: #182335;
+    background-color: #e3e3e3;
     flex-wrap: wrap;
     border: #334155 1px solid;
     border-radius: 10px;
@@ -558,21 +576,16 @@ footer aside{
 }
 
 .email aside{
-    background: linear-gradient( to bottom right, #1C8BFE, #00AFE3);
+    background: linear-gradient( to bottom right, #8fc3f4, #00AFE3);
 }
 
 .teams aside{
     background: linear-gradient( to bottom right, #4F2C91, #6264A7);
 }
 
-.teams {
-    margin-bottom: 5rem;
-}
-
 .locatie aside{
-    background: rgb(85, 85, 85);
+    background: rgba(33, 177, 33, 0.41);
 }
-
 
 
 footer h2 {
@@ -597,21 +610,51 @@ footer div p {
 
 
 .email:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
     background: #043f8438;
     border: #023b4d 1px solid;
-    transition-duration: 300ms;
+    transition-duration: 500ms;
     transition-delay: 20ms;
 
 }
 
 .teams:hover{
-    transform: scale(1.05);
+    transform: scale(1.03);
     background-color: #4f2c9137;
     border: #023b4d 1px solid;
-    transition-duration: 300ms;
+    transition-duration: 500ms;
     transition-delay: 20ms;
 
+}
+
+.locatie:hover{
+    background: linear-gradient( to bottom right, rgba(14, 151, 47, 0.34), rgba(107, 214, 112, 0.42));
+    transform: scale(1.03);
+    transition-duration: 500ms;
+    transition-delay: 20ms;
+}
+
+
+.volgme:hover{
+    background: linear-gradient( to bottom right, #4f2c9137, #0a0a1e);
+    transform: scale(1.02);
+    transition-duration: 500ms;
+    transition-delay: 20ms;
+
+}
+
+.volgme img{
+    height: 40px;
+}
+.volgme button{
+    background: #000000;
+        width: 42rem;
+        border: black solid 1px;
+        border-radius: 5px;
+    }
+
+.volgme button:hover{
+    background: linear-gradient( to bottom right, #4f2c9137, #0a0a1e);
 }
 
 footer .volgme h3{
@@ -632,3 +675,4 @@ footer .volgme a{
 .volgme a{
     transform: scale(1.3);
 }
+

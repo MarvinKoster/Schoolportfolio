@@ -47,7 +47,7 @@ function laadPuzzelstukjes () {
     const puzzelStukContainer = document.getElementById('puzzelStukjes');
     for (let i = 1; i <= 9; i++) {
         const imgElement = document.createElement('img');
-        imgElement.src = '/image/' + i + '.gif';
+        imgElement.src = '../image/' + i + '.gif';
         imgElement.draggable = true;
         imgElement.id = 'image-' + i;
         imgElement.addEventListener('dragstart', onDragStart)

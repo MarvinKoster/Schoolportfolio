@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh; /* full height minus navbar if needed */
+    flex-direction: row;
+
+}
+
+body{
+    margin: 0;
+}
+
+
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+
+}
