@@ -1,0 +1,48 @@
+body {
+    background: #f7f2f1;
+    font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.main-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+
+}
+
+form input{
+    width: 20%;
+    background: #000000;
+    color: #7BDFF2 ;
+    border: black 1px solid;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    transition: border 0.1s ease;
+    padding: 10px;
+}
+
+form input:focus{
+    animation: blink 3s infinite;
+    border: #000000 4px solid;
+    outline: #7BDFF2 5px solid;
+
+}
+
+.button {
+    width: 5%;
+}
+
+.button:hover{
+    outline: 2px solid #7BDFF2;
+}

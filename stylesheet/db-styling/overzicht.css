@@ -1,0 +1,54 @@
+body {
+    background: #f7f2f1;
+    font: 19px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+}
+
+
+table{
+    border-collapse: collapse;
+    width: 60%;
+    margin-bottom: 1%;
+
+}
+
+tr{
+    background: #000000;
+    color: white;
+    text-align: center;
+}
+
+.id{
+    color: #7BDFF2;
+}
+
+
+.button {
+    text-decoration: none;
+    background-color: black;
+    color: #7BDFF2;
+}
+
+.new{
+    color: #7BDFF2;
+    width: 60%;
+    border-radius: 10px;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #00c2ff;
+}
+.new:hover{
+    color: black;
+    font-weight: bold;
+}
+
+
